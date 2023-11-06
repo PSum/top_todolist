@@ -13,6 +13,12 @@ let testproject = createProject('Testproject');
 addToProject(testtodo, testproject);
 addToProject(testtodo2, testproject);
 
-console.log(showProject(testproject, contentDiv));
+let testproject2 = createProject('Todos today');
+addToProject(testtodo, testproject2);
+addToProject(testtodo, testproject2);
+addToProject(testtodo2, testproject2);
+
+showProject(testproject, contentDiv);
+showProject(testproject2, contentDiv);
 
 

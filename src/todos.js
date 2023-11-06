@@ -41,9 +41,12 @@ function createDom (todo){
 }
 
 export function showProject(project, container){
-    let data = [];
+    let projectContainer = document.createElement('div');
+    projectContainer.innerHTML = project.projectname;
+    projectContainer.classList.add('project');
     project.content.forEach(todo => {
-        container.appendChild(createDom(todo));
+        projectContainer.appendChild(createDom(todo));
+    container.appendChild(projectContainer);
     });
 
 }

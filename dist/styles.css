@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: black 2px solid;
+    }
+
+.todoContainer {
+    border: 1px solid black;
+
+}
